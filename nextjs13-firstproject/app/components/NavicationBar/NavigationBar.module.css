@@ -1,0 +1,27 @@
+.NavBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.NavBarElement{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+  
+.NavBarLink {
+    padding: 0 1rem;
+    color: green;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+  
+.NavBarLink:hover {
+    color: green;
+    transition: all 0.2s ease-in-out;
+}
+  
