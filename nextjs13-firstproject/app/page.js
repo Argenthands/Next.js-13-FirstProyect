@@ -1,16 +1,18 @@
 import Link from "next/link"
+import Weather from "./components/Weather/Weather"
 export default function InedxPage() {
     return (
-        <main>
-            <>
+        <>
+            <h1>Index Page</h1>
+            <main>
                 <Link href="/users">
                     users
                 </Link>
-            </>
-            <h1>
-                Welcome to Next.js 13!
-            </h1>
-        </main>
+            </main>
+            <aside>
+                <Weather />
+            </aside>
+        </>
     )
 }
 
