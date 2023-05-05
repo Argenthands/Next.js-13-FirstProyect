@@ -5,14 +5,16 @@ async function fetchUsers() {
     const data = await res.json();
     return data.data;
 }
+
+//nextjs13-firstproject\pages\api\weather.jsx
 const fetchWeather = async (city) => {
-    let apiUrl = `/app/api/weather?city=${city}`;
+    let apiUrl = `/api/weather?city=${city}`;
     const res = await fetch(apiUrl);
-    console.log(apiUrl)
     const data = await res.json();
 
     return data;
 };
+
 /*
 async function getServerSideProps() {
     const users = await fetchUsers();

@@ -1,20 +1,26 @@
 "use client"
 
 import { useState, useEffect } from 'react';
-import { fetchWeather } from "../../api/api"
+//import { fetchWeather } from "../../api/api"
+import { fetchWeather } from "../../../pages/api/api"
 
 export default function Weather() {
     
     const [data, setData] = useState(null);
+    const [city, setCity] = useState('jerusalem');
     useEffect(()=>{
-        fetchWeather('New York').then((data) => {
+        fetchWeather(city).then((data) => {
             setData(data);
         })
-    }, [])
+    }, [
+        city
+    ])
 
     return (
         <div>
             <h1>Weather</h1>
+            <label htmlFor="city">city: </label>
+            <input type="text" value={city} onChange={(e) => setCity(e.target.value)} />
             {data ? (
                 <div>
                     <h2>{data.nearest_area[0].areaName[0].value}</h2>
