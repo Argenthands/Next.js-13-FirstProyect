@@ -1,12 +1,18 @@
 "use client"
-//import { useRouter } from "next/navigation";
-import { useRouter } from "next/router";
-function UsersPageID(){
-    const router = useRouter();
-    console.log(router)
+import { fetchUser } from "../../../pages/api/api";
+//import { useRouter } from "next/router";
+import { 
+    //useRouter,
+    useParams
+ } from "next/navigation";
+async function UsersPageID(){
+    const { id } = useParams();
+    const { data } = await fetchUser(id);
+    console.log(data)
+    // 
     return (
         <>
-            <h1>User ID:{"text"}</h1>
+            <h1>{`User Name: ${data.first_name} ${data.last_name}`}</h1>
         </>
     )
 }
