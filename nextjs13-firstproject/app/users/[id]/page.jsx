@@ -1,5 +1,6 @@
 "use client"
-import { useRouter } from "next/navigation";
+//import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 function UsersPageID(){
     const router = useRouter();
     console.log(router)

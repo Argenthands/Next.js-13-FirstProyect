@@ -7,7 +7,6 @@ async function UsersPage() {
     return (
         <>
             <Users users={users} />
-            
         </>
     )
 }
