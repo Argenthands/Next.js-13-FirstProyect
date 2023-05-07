@@ -6,7 +6,7 @@ async function fetchUsers() {
     return data;
 }
 
-async function fetchUser(id) {
+async function fetchUserById(id) {
     const apiUrl = `/api/users/${id}`;
     const res = await fetch(apiUrl);
     const data = await res.json();
@@ -25,7 +25,7 @@ const fetchWeather = async (city) => {
 export {
     // Users endpoints
     fetchUsers,
-    fetchUser,
+    fetchUserById,
     // Weather endpoints
     fetchWeather,
 }
