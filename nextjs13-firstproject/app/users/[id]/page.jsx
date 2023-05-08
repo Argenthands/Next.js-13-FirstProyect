@@ -1,5 +1,5 @@
-"use client"
-import { fetchUserById } from "../../../pages/api/api";
+//"use client"
+import { fetchUserById } from "../../api/api";
 /*import { useRouter } from "next/router";
 import { 
     //useRouter,

@@ -1,10 +1,19 @@
 import { store } from "../context/store"
+
+// Users endpoints
 async function fetchUsers() {
     const res = await fetch('https://reqres.in/api/users');
     const data = await res.json();
     return data.data;
 }
 
+async function fetchUserById(id) {
+    const res = await fetch(`https://reqres.in/api/users/${id}`);
+    const data = await res.json();
+    return data;
+}
+
+// Weather endpoints
 const fetchWeather = async (city) => {
     const apiUrl = `https://wttr.in/${city}?format=j1`;
     return fetch(apiUrl).then((res) => res.json());
@@ -22,5 +31,6 @@ async function getServerSideProps() {
 
 export {
     fetchUsers,
+    fetchUserById,
     fetchWeather,
 }
