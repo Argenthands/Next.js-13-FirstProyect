@@ -1,11 +1,11 @@
-import './globals.css'
+import './globals.scss'
 import NavigationBar from './components/NavicationBar/NavigationBar'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-    title: 'My first Next.js 13 app',
+    title: 'First Next.js 13 app',
     description: 'generate with npx create-next-app@latest --experimental-app',
     keywords: 'nextjs, nextjs13, nextjs13-firstproject, nextjs13-firstproject-app, next.js, next.js13, next.js13-firstproject, next-project',
 }

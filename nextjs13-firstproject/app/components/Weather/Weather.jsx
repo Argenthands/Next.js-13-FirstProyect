@@ -1,5 +1,5 @@
 "use client"
-
+import styles from "./Weather.module.scss"
 import { useState, useEffect } from 'react';
 //import { fetchWeather } from "../../api/api"
 import { fetchWeather } from "../../../pages/api/api"
@@ -17,7 +17,7 @@ export default function Weather() {
     ])
 
     return (
-        <div>
+        <div className={styles.Weather}>
             <h1>Weather</h1>
             <label htmlFor="city">city: </label>
             <input type="text" value={city} onChange={(e) => setCity(e.target.value)} />

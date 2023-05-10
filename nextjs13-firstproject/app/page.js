@@ -1,9 +1,10 @@
+import styles from './page.module.scss'
 import Link from "next/link"
 import Weather from "./components/Weather/Weather"
 export default function InedxPage() {
     return (
-        <>
-            <h1>Index Page</h1>
+        <div className='InedxPage'>
+            <h1>Index Page {"(home)"}</h1>
             <main>
                 <Link href="/users">
                     users
@@ -12,7 +13,7 @@ export default function InedxPage() {
             <aside>
                 <Weather />
             </aside>
-        </>
+        </div>
     )
 }
 

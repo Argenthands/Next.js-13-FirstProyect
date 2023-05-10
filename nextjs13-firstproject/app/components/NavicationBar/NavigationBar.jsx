@@ -1,5 +1,5 @@
 import Link from "next/link"
-import styles from "./NavigationBar.module.css"
+import styles from "./NavigationBar.module.scss"
 
 function NavigationBar() {
     return (

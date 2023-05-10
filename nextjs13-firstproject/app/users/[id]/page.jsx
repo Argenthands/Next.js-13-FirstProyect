@@ -1,3 +1,4 @@
+
 //"use client"
 import { fetchUserById } from "../../api/api";
 /*import { useRouter } from "next/router";
@@ -18,13 +19,13 @@ async function getUser(id){
 async function UsersPageID({ params }){
     //const { id } = useParams();
     const data = await getUser(params.id);
-    console.log(data);
+    //console.log(data);
     return (
-        <>
+        <div>
             <h1>{`User Name: ${data.first_name} ${data.last_name}`}</h1>
             <h2>{`User Email: ${data.email}`}</h2>
             <img src={data.avatar} alt={data.first_name} />
-        </>
+        </div>
     )
 }
 export default UsersPageID
