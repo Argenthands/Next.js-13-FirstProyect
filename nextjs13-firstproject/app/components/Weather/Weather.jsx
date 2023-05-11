@@ -2,7 +2,7 @@
 import styles from "./Weather.module.scss"
 import { useState, useEffect } from 'react';
 //import { fetchWeather } from "../../api/api"
-import { fetchWeather } from "../../../pages/api/api"
+import { fetchWeather } from "../../api/api"
 
 export default function Weather() {
     
