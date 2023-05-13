@@ -1,5 +1,7 @@
 import styles from './about.module.scss'
-
+export const metadata = {
+	title: 'About',
+}
 function AboutPage() {
 	return (
 		<div className={styles.AboutPage}>

@@ -16,7 +16,12 @@ async function fetchUserById(id) {
 // Weather endpoints
 const fetchWeather = async (city) => {
     const apiUrl = `https://wttr.in/${city}?format=j1`;
-    return fetch(apiUrl).then((res) => res.json());
+    try{
+        const data = fetch(apiUrl).then((res) => res.json());
+        return data;
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 async function getServerSideProps() {

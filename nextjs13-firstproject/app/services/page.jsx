@@ -1,5 +1,9 @@
 import styles from './services.module.scss'
 
+export const metadata = {
+    title: 'Services',
+}
+
 function ServicesPage() {
     return (
         <div className={styles.ServicesPage}>
