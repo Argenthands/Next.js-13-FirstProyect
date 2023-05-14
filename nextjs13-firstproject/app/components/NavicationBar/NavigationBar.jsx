@@ -3,13 +3,15 @@ import styles from "./NavigationBar.module.scss"
 
 function NavigationBar() {
     return (
-        <nav>
+        <nav className={styles.NavigationBarComponent}>
             <ul className={styles.NavBar}>
                 <li className={styles.NavBarElement}>
                     <Link href="/" className={styles.NavBarLink}>
                         Home
                     </Link>
                 </li>
+            </ul>
+            <ul className={styles.NavBar}>
                 <li className={styles.NavBarElement}>
                     <Link href="/about" className={styles.NavBarLink}>
                         About

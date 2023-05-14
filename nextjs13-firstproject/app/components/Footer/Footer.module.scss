@@ -1,0 +1,15 @@
+.FooterComponent {
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+}
+.SocialMediaContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 500px;
+}
+.SocialMediaLink{
+    width: 60px;
+    height: 75px;
+}

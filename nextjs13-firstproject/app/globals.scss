@@ -1,0 +1,51 @@
+// Light mode
+$main-color-light: #b2c8ca;
+$secondary-color-light: #8ea8bc;
+$tertiary-color-light: #70819c;
+$accent-color-light: #94c9ca;
+$main-background-light: #f5f5f5;
+$secondary-background-light: #ddeedc;
+$tertiary-background-light: #9cabbf;
+$accent-background-light: #b2c8ca;
+$main-text-color-light: #666666;
+$secondary-text-color-light: #f5f5f5;
+$tertiary-text-color-light: #f5f5f5;
+$accent-text-color-light: #f5f5f5;
+
+// Darck mode
+$main-color-dark: #ff79c6;
+$secondary-color-dark: #bd93f9;
+$tertiary-color-dark: #50fa7b;
+$accent-color-dark: #f1fa8c;
+$main-background-dark: #121212;
+$secondary-background-dark: #0d0d0d;
+$tertiary-background-dark: #0a0a0a;
+$accent-background-dark: #292929;
+$main-text-color-dark: #e83e8c;
+$secondary-text-color-dark: #8c6ae8;
+$tertiary-text-color-dark: #3be86a;
+$accent-text-color-dark: #121212;
+
+// Mixin para cambiar entre los modos claro y oscuro
+@mixin light-mode {
+    background-color: $main-background-light;
+    color: $main-text-color-light;
+    border: 1px solid $main-color-light;
+}
+
+@mixin darck-mode {
+    background-color: $main-background-darck;
+    color: $main-text-color-darck;
+    border: 1px solid $main-color-darck;
+}
+
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+        Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: 16px;
+    @include light-mode;
+}

@@ -3,7 +3,7 @@ import Link from "next/link"
 import Weather from "./components/Weather/Weather"
 export default function InedxPage() {
     return (
-        <div className='InedxPage'>
+        <div className={styles.InedxPage}>
             <h1>Index Page {"(home)"}</h1>
             <main>
                 <Link href="/users">

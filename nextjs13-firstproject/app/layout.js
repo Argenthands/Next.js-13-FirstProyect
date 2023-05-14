@@ -1,5 +1,6 @@
-import './globals.scss'
+import style from './globals.scss'
 import NavigationBar from './components/NavicationBar/NavigationBar'
+import Footer from './components/Footer/Footer'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -11,7 +12,7 @@ export const metadata = {
     },
     description: 'generate with npx create-next-app@latest --experimental-app',
     keywords: ['nextjs, nextjs13, nextjs13-firstproject, nextjs13-firstproject-app, next.js, next.js13, next.js13-firstproject, next-project'],
-    authors: [{name: "Alejandro David Benolol", url: ""}],
+    authors: [{ name: "Alejandro David Benolol", url: "" }],
     creator: "Alejandro David Benolol",
     publisher: "Alejandro David Benolol",
     site_name: "First Next.js 13 app",
@@ -35,7 +36,8 @@ export default function RootLayout({ children }) {
             <body className={inter.className}>
                 <NavigationBar />
                 {children}
-                </body>
+                <Footer />
+            </body>
         </html>
     )
 }
